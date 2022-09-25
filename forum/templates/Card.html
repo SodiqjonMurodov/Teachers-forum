@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    {{ card.task }}
+{% endblock %}
+
+{% block head %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/Card.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="card_vid">
+        <p><b>O'qituvchi: </b><i>{{ card.user }}</i></p>
+        <p><b>Mavzu: </b><i>{{ card.task }}</i></p>
+        <div class="video">
+            <video width="660" height="415" controls>
+                <source src="{{ MEDIA_URL }}/{{ card.file }}" type="video/mp4">
+            </video>
+        </div>
+        <div class="status_video">
+            <a class="download_vid" href="{% url 'card' card.id %}">Videoni yuklab olish</a>
+            <p>{{ card.date }}</p>
+        </div>
+
+    </div>
+{% endblock %}

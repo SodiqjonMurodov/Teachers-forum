@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Asosiy sahifa
+{% endblock %}
+
+{% block content %}
+<table>
+    <tr class="first-header">
+        <th><h3>F.I.SH</h3></th>
+        <th><h3>Mavzu nomi</h3></th>
+        <th><h3>Video rolik</h3></th>
+    </tr>
+    {% for card in user_cards %}
+        <tr>
+            <td><p>
+                <a href="{% url 'card' card.id %}">{{ card.user }}</a>
+            </p></td>
+            <td><p>
+                <a href="{% url 'card' card.id %}">{{ card.task }}</a>
+            </p></td>
+            <td><p>
+                <a href="{% url 'card' card.id %}">{{ card.file }}</a>
+            </p></td>
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}
+

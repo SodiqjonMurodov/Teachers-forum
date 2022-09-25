@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Post yaratish
+{% endblock %}
+
+{% block head %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/post.css' %}">
+{% endblock %}
+
+{% load widget_tweaks %}
+
+{% block content %}
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="form">
+            <label for="user">F.I.SH: </label>
+            <input id="user" type="text" name="user" placeholder="F.I.SH"><br><br>
+            <label for="task">Mavzu nomi: </label>
+            <input id="task" type="text" name="task" placeholder="Mavzu"><br><br>
+            <label for="file">Video rolik: </label>
+            <input id="file" type="file" name="file" value="Faylni tanlang"><br><br>
+            <input id="submit" type="submit" value="Yuklash">
+        </div>
+    </form>
+{% endblock %}

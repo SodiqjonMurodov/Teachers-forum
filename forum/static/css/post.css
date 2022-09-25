@@ -1,0 +1,35 @@
+
+.form{
+    display: inline-block;
+    /*border: 2px solid black;*/
+    width: 450px;
+    margin: 3% 20%;
+    /*font-family: Arial;*/
+    font-family: "Bungee Spic";
+    font-style: italic;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+#submit {
+    margin: 0;
+    border: 2px solid #000;
+    border-radius: 5px;
+    color: #000;
+    font-family: "Times New Roman";
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 5px 15px;
+}
+
+#submit:hover {
+    color: #fff;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+input {
+    margin-top: 15px;
+    padding: 5px;
+    width: 500px;
+}

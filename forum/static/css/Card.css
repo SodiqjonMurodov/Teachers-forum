@@ -1,0 +1,43 @@
+.card_vid {
+    margin: 0 10%;
+    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+b {
+    font-size: 18px;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+}
+
+.status_video {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.download_vid {
+    margin: 0;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-family: "Times New Roman";
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 5px 15px;
+}
+
+.download_vid:hover {
+    color: #fff;
+    background-color: #000000;
+    cursor: pointer;
+    font-style: normal;
+    text-decoration: none;
+}
+
